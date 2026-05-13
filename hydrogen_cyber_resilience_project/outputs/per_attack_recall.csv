@@ -1,0 +1,5 @@
+attack_type,attack_instances,detected_instances,recall
+stealthy_sensor_drift,97,87,0.8969072164948454
+actuator_spoofing,107,107,1.0
+denial_of_service,88,88,1.0
+false_data_injection,92,92,1.0

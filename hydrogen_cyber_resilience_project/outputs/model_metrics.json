@@ -1,0 +1,92 @@
+{
+  "dataset_rows": 6000,
+  "attack_prevalence": 0.21333333333333335,
+  "attack_type_counts": {
+    "normal": 4720,
+    "actuator_spoofing": 350,
+    "denial_of_service": 330,
+    "false_data_injection": 320,
+    "stealthy_sensor_drift": 280
+  },
+  "train_rows": 4200,
+  "test_rows": 1800,
+  "best_supervised_model": "random_forest",
+  "results": {
+    "logistic_regression": {
+      "accuracy": 0.9288888888888889,
+      "precision": 0.8121951219512196,
+      "recall": 0.8671875,
+      "f1": 0.8387909319899244,
+      "roc_auc": 0.970429098987759,
+      "average_precision": 0.9347528406046877
+    },
+    "random_forest": {
+      "accuracy": 0.9944444444444445,
+      "precision": 1.0,
+      "recall": 0.9739583333333334,
+      "f1": 0.9868073878627969,
+      "roc_auc": 0.9999062058615819,
+      "average_precision": 0.9996851065016655
+    },
+    "isolation_forest": {
+      "accuracy": 0.775,
+      "precision": 0.48330683624801274,
+      "recall": 0.7916666666666666,
+      "f1": 0.6001974333662389
+    }
+  },
+  "cross_validation_best_model": "random_forest",
+  "per_attack_recall": [
+    {
+      "attack_type": "stealthy_sensor_drift",
+      "attack_instances": 97,
+      "detected_instances": 87,
+      "recall": 0.8969072164948454
+    },
+    {
+      "attack_type": "actuator_spoofing",
+      "attack_instances": 107,
+      "detected_instances": 107,
+      "recall": 1.0
+    },
+    {
+      "attack_type": "denial_of_service",
+      "attack_instances": 88,
+      "detected_instances": 88,
+      "recall": 1.0
+    },
+    {
+      "attack_type": "false_data_injection",
+      "attack_instances": 92,
+      "detected_instances": 92,
+      "recall": 1.0
+    }
+  ],
+  "top_features_by_permutation_f1": [
+    {
+      "feature": "flow_nm3h",
+      "importance_mean": 0.2341941547835451,
+      "importance_std": 0.008613642141327406
+    },
+    {
+      "feature": "pressure_bar",
+      "importance_mean": 0.1992966696992088,
+      "importance_std": 0.010221974866120902
+    },
+    {
+      "feature": "tank_level_pct",
+      "importance_mean": 0.1608352927031198,
+      "importance_std": 0.006383335652037117
+    },
+    {
+      "feature": "electrolyzer_current_a",
+      "importance_mean": 0.08035241086440449,
+      "importance_std": 0.011538145550807262
+    },
+    {
+      "feature": "temperature_c",
+      "importance_mean": 0.04584146517073497,
+      "importance_std": 0.007448720180829823
+    }
+  ]
+}
