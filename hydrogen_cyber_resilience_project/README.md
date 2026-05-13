@@ -1,6 +1,6 @@
 # Machine Learning for Cyber Resilience of Hydrogen Energy Systems
 
-This project package contains a distinction-level bachelor final-year project artefact and report focused on the use of machine learning to support cyber resilience in hydrogen energy systems.
+This project package contains my bachelor final-year project artefact and report focused on the use of machine learning to support cyber resilience in hydrogen energy systems.
 
 ## What is included
 
